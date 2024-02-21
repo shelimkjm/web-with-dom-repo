@@ -138,7 +138,7 @@
       </div>
       <div class="flex gap-1 mx-auto bg-[#1DD1001A] p-4 ">
         <img class="size-10 flex justify-center items-center" src="/images/seat-green.png" alt="">
-        <p class="text-[#1DD100] ">40 seats left</p>
+        <p class="text-[#1DD100] "><span id="select-down">40</span>seats left</p>
       </div>
     </div>
    
@@ -168,7 +168,7 @@
   <!-- section 3 -->
 
 
-  <section id="scroll" class=" lg:flex justify-between  space-x-24 mt-24 m-10">
+  <section class=" lg:flex justify-between  space-x-24 mt-24 m-10">
 <div>
   <h1>Select your seat</h1>
   <div class="flex justify-between">
@@ -195,47 +195,49 @@
       
           </div>
       
-        <div class="grid grid-cols-4 gap-10">  <button type="submit" class="btn">A1</button>
-          <button type="submit" class="btn">A2</button>
-          <button type="submit" class="btn">A3</button>
-          <button type="submit" class="btn">A4</button>
-          <button type="submit" class="btn">B1</button>
-          <button type="submit" class="btn">B2</button>
-          <button type="submit" class="btn">B3</button>
-          <button type="submit" class="btn">B4</button>
-          <button type="submit" class="btn">C1</button>
-          <button type="submit" class="btn">C2</button>
-          <button type="submit" class="btn">C3</button>
-          <button type="submit" class="btn">C4</button>
-          <button type="submit" class="btn">D1</button>
-          <button type="submit" class="btn">D2</button>
-          <button type="submit" class="btn">D3</button>
-          <button type="submit" class="btn">D4</button>
-          <button type="submit" class="btn">E1</button>
-          <button type="submit" class="btn">E2</button>
-          <button type="submit" class="btn">E3</button>
-          <button type="submit" class="btn">E4</button>
-          <button type="submit" class="btn">F1</button>
-          <button type="submit" class="btn">F2</button>
-          <button type="submit" class="btn">F3</button>
-          <button type="submit" class="btn">F4</button>
-          <button type="submit" class="btn">G1</button>
-          <button type="submit" class="btn">G2</button>
-          <button type="submit" class="btn">G3</button>
-          <button type="submit" class="btn">G4</button>
-          <button type="submit" class="btn">H1</button>
-          <button type="submit" class="btn">H2</button>
-          <button type="submit" class="btn">H3</button>
-          <button type="submit" class="btn">H4</button>
+        <div class="grid grid-cols-4 gap-10">  
+          <button type="submit" class="button-but">A1</button>
+          <button type="submit"  class="button-but">A2</button>
+          <button type="submit"  class="button-but">A3</button>
+          <button type="submit"  class="button-but">A4</button>
+          <button type="submit"  class="button-but">B1</button>
+          <button type="submit" class="button-but">B2</button>
          
-          <button type="submit" class="btn">I1</button>
-          <button type="submit" class="btn">I2</button>
-          <button type="submit" class="btn">I3</button>
-          <button type="submit" class="btn">I4</button>
-          <button type="submit" class="btn">J1</button>
-          <button type="submit" class="btn">J2</button>
-          <button type="submit" class="btn">J3</button>
-          <button type="submit" class="btn">J4</button>
+          <button type="submit" class="button-but">B3</button>
+          <button type="submit" class="button-but">B4</button>
+          <button type="submit" class="button-but">C1</button>
+          <button type="submit" class="button-but">C2</button>
+          <button type="submit" class="button-but">C3</button>
+          <button type="submit" class="button-but">C4</button>
+          <button type="submit" class="button-but">D1</button>
+          <button type="submit" class="button-but">D2</button>
+          <button type="submit" class="button-but">D3</button>
+          <button type="submit" class="button-but">D4</button>
+          <button type="submit" class="button-but">E1</button>
+          <button type="submit" class="button-but">E2</button>
+          <button type="submit" class="button-but">E3</button>
+          <button type="submit" class="button-but">E4</button>
+          <button type="submit" class="button-but">F1</button>
+          <button type="submit" class="button-but">F2</button>
+          <button type="submit" class="button-but">F3</button>
+          <button type="submit" class="button-but">F4</button>
+          <button type="submit" class="button-but">G1</button>
+          <button type="submit" class="button-but">G2</button>
+          <button type="submit" class="button-but">G3</button>
+          <button type="submit" class="button-but">G4</button>
+          <button type="submit" class="button-but">H1</button>
+          <button type="submit" class="button-but">H2</button>
+          <button type="submit" class="button-but">H3</button>
+          <button type="submit" class="button-but">H4</button>
+         
+          <button type="submit" class="button-but">I1</button>
+          <button type="submit" class="button-but">I2</button>
+          <button type="submit" class="button-but">I3</button>
+          <button type="submit" class="button-but">I4</button>
+          <button type="submit" class="button-but">J1</button>
+          <button type="submit" class="button-but">J2</button>
+          <button type="submit" class="button-but">J3</button>
+          <button type="submit" class="button-but">J4</button>
          </div>
           
    </div></div>
@@ -246,7 +248,7 @@
 
 <div class="lg:grid grid-cols-3 lg:gap-10">
   <h1 class="font-bold lg:flex">
-  <span>Seat</span><span class="bg-[#1DD100] px-2">0</span></h1>
+  <span>Seat</span><span id="seat-add" class="bg-[#1DD100] px-2">0</span></h1>
   <h1 class="font-bold">class</h1>
   <h1 class="font-bold">Price</h1>
   <p>C2</p>
@@ -259,7 +261,7 @@
 </div>
 <div class="flex justify-between">
 <p class="font-bold">Total Price</p>
-<p class="font-bold">BDT 1100</p>
+<p class="font-bold">BDT <span id="total-price">0</span></p>
 
 </div>
 
@@ -277,7 +279,7 @@
 </div>
 
 
-<div>
+<div id="scroll">
   <div class="label">
     <span class="label-text font-bold">Passenger Name*</span>
     
